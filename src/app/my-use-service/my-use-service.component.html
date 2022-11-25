@@ -1,0 +1,8 @@
+<h1>Usado el servicio</h1>
+
+<div *ngIf="!wcm_data; else elseBlock">
+    <h4>Que servicio tan lento Ome!!!</h4>
+</div>
+<ng-template #elseBlock>
+    {{wcm_data | json}}
+</ng-template>
