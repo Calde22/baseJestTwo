@@ -16,7 +16,6 @@ export class MyUseServiceComponent implements OnInit {
   ngOnInit(): void {
     this.wcm_service.getWcm().subscribe( get_wcm_data =>{
       this.wcm_data = get_wcm_data
-      console.log(get_wcm_data)
     })
   }
 

@@ -21,7 +21,6 @@ describe('WcmService', () => {
 
   it("Vamos a ver si TDC", (done) =>{
     service.getWcm().subscribe( wcm_data =>{
-      console.log({wcm_data})
       expect(wcm_data.Menutarjetas[0]).toBeTruthy()
       done()
     } )

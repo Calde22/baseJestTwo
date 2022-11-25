@@ -9,7 +9,8 @@
     "lint": "ng lint",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "coverage" : "jest --coverage"
+    "coverage" : "jest --coverage",
+    "test:sna" : "jest --updateSnapshot"
   },
   "private": true,
   "dependencies": {

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyUseServiceComponent Esto es una foto como la ves 🖼️ snapshot 1`] = `
+<div
+  id="root1"
+>
+  <h1>
+    Usado el servicio
+  </h1>
+  <div>
+    <h4>
+      Que servicio tan lento Ome!!!x
+    </h4>
+  </div>
+  
+  
+</div>
+`;
