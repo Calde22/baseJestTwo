@@ -17,24 +17,15 @@ export class AppComponent {
   filters:string[] = [];
 
   constructor(private service: DataService){
-    this.getData()
+ 
   }
 
   private getData():void {
-    this.service.getCharacter()
-    .subscribe((data: characterResult) => {
-      console.log(data.result[0].description);
-      this.data = data.result;
-      this.dataFilter = data.result;
-    })
+    
   }
 
 
   public applyFilter(e:eventTag):void {
-    e.active ?  this.filters.push(e.title) : this.filters.splice(this.filters.indexOf(e.title), 1)
-    this.dataFilter = this.data.filter((item)=> 
-    (this.filters.find((e) => item.skills.indexOf(e) != -1)))
-    if (this.filters.length == 0) this.dataFilter = this.data
       
   }
  
