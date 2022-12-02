@@ -1,0 +1,32 @@
+<div class="bc-card-product bc-card-large-img" id="small-card-img-0">
+    <div class="bc-card-product-img"> 
+        <img src="{{img}}" alt="" /></div>
+    <div class="bc-card-product-body">
+        <div class="bc-card-head">
+            <h6 class="bc-card-tittle">{{title}}</h6><em class="bc-card-toggle bc-icon"
+                aria-hidden="true">arrow2-down</em>
+        </div>
+        <p class="bc-card-subtittle-description">
+            {{description}}
+        </p>
+        <br>
+        <ul>
+            <li class="bc-card-info-aditional-text" *ngFor="let skill of skills">
+                {{skill}}
+            </li>
+        </ul>
+       
+        
+        <div class="bc-card-info">
+            <div class="bc-card-info-status">
+                <div class="bc-card-info-status-icon">
+                    <div [ngClass]="{success: state, error: !state}"></div>
+                </div>
+                <p class="bc-card-info-status-label">{{state ? 'Activo' : 'Inactivo'}}</p>
+                
+            </div>
+          
+           
+        </div>
+    </div>
+</div>

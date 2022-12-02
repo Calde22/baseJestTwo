@@ -1,0 +1,5 @@
+<div (click)="onChange(title)" class="bc-tag-content"  aria-label="botón 1 filter">
+    <div class="bc-tag-filter" [ngClass]="{'bc-tag-filter-active': active}" tabindex="0">
+        <p class="bc-mx-1">{{title}}</p><i class="bc-icon bc-xs">{{active ? 'error': 'plus'}}</i>
+    </div>
+</div>
