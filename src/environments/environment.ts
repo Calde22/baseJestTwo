@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  url: "https://firebasestorage.googleapis.com/v0/b/json-8d407.appspot.com/o/data.json?alt=media&token=dafae22f-475c-4520-9abf-a8d7655e67c3"
 };
 
 /*
